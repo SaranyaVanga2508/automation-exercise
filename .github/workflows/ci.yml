@@ -79,7 +79,7 @@ jobs:
       - name: Download coverage data
         uses: actions/download-artifact@v3
         with:
-          name: coverage-data
+          name: coverage-report
           path: .  # Download .coverage file
 
       - name: Create virtual environment
@@ -102,6 +102,6 @@ jobs:
       - name: Save coverage XML
         uses: actions/upload-artifact@v3
         with:
-          name: coverage-report
+          name: final-coverage-report
           path: coverage.xml  
           retention-days: 14  
