@@ -1,4 +1,5 @@
 numpy
 pytest
-black
 coverage
+pytest-cov
+black
