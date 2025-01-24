@@ -60,10 +60,6 @@ jobs:
           source venv/bin/activate  
           pytest --cov=. --cov-report=term --cov-report=xml --cov-config=.coveragerc  
 
-      - name: Debug: Check coverage file
-        run: |
-          ls -la
-          
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
