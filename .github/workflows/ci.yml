@@ -65,7 +65,7 @@ jobs:
         with:
           name: coverage-report
           path: .coverage
-          retention-days: 1
+          retention-days: 14
           include-hidden-files: true
 
   
@@ -102,6 +102,6 @@ jobs:
       - name: Save coverage XML
         uses: actions/upload-artifact@v3
         with:
-          name: final-coverage-report
+          name: coverage-xml
           path: coverage.xml  
           retention-days: 14  
